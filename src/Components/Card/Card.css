@@ -8,6 +8,7 @@
     column-gap: 2em;
     border-bottom: 2px solid #efefef;
     padding: 3em;
+    margin-top: 1em;
 }
 
 .card__img {
@@ -31,6 +32,7 @@
 
 .card__text__google-maps-link {
     color: grey;
+    text-underline-offset: .2em;
 }
 
 .card__text__country__icon {

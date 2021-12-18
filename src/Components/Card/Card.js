@@ -3,17 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import './Card.css'
 
-const Card = (props) => (
+const Card = ({item}) => {
+    
+    const { imageUrl, location, googleMapsUrl, title, startDate, endDate, description } = item;
+
+
+    return (
     <article className="card-container">
-        <img src={props.item.imageUrl} alt="" className="card__img" />
+        <img src={imageUrl} alt="" className="card__img" />
         <div className="card__text-container">
-            <p className="card__text__country"><FontAwesomeIcon icon={faMapMarkerAlt} className="card__text__country__icon" /> {props.item.location}</p>
-            <a className="card__text__google-maps-link" href={props.item.googleMapsUrl}>View on Google Maps</a>
-            <h2 className="card__text__title">{props.item.title}</h2>
-            <p className="card__text__date">{props.item.startDate} - {props.item.endDate}</p>
-            <p className="card__text__description">{props.item.description}</p>
+            <p className="card__text__country"><FontAwesomeIcon icon={faMapMarkerAlt} className="card__text__country__icon" /> {location}</p>
+            <a className="card__text__google-maps-link" href={googleMapsUrl}>View on Google Maps</a>
+            <h2 className="card__text__title">{title}</h2>
+            <p className="card__text__date">{startDate} - {endDate}</p>
+            <p className="card__text__description">{description}</p>
         </div>
     </article>
-)
+)}
 
 export default Card
