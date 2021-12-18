@@ -1,0 +1,17 @@
+.header-container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2em 0;
+    text-align: center;
+    color: #fff;
+    background-color: #F55A5A;
+    font-size: .5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.header__title__icon {
+    font-size: 2rem;
+}

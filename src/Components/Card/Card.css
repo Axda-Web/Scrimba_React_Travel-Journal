@@ -1,0 +1,16 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    border-bottom: 2px solid grey;
+    padding: 3em;
+}
+
+.card__img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

@@ -1,9 +1,22 @@
+import React from 'react'
+import Header from './Components/Header/Header'
+import Card from './Components/Card/Card'
 import './App.css';
 
+import Data from './Data.js'
+
 function App() {
+
+  const cards = Data.map(item => (
+    <Card key={item.title}
+          item={item}
+    />
+  ))
+
   return (
-    <div className="App">
-      <h1>Test</h1>
+    <div className="app-container">
+      <Header />
+      {cards}
     </div>
   );
 }
