@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import './Card.css'
 
-const Card = ({item}) => {
+const Card = (props) => {
     
-    const { imageUrl, location, googleMapsUrl, title, startDate, endDate, description } = item;
+    const { imageUrl, location, googleMapsUrl, title, startDate, endDate, description } = props;
 
 
     return (

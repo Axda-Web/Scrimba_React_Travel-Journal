@@ -2,7 +2,7 @@ import  dublinImg from './Images/dublin.jpg'
 import  rotterdamImg from './Images/rotterdam.jpg'
 import  bledImg from './Images/bled.jpg'
 
-export default [
+const data = [
     {
         title: "Bled",
         location: "Slovenia",
@@ -29,3 +29,5 @@ export default [
         imageUrl: rotterdamImg
     }, 
 ]
+
+export default data
